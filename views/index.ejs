@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Citizens Organized</title>
+  </head>
+  <body>
+    <%- include("includes/header.ejs", {
+      small: false,
+      subtitle: "Spread the word",
+      title: "It's time to spread the word."
+    }) %>
+    <div class="outerContainer">
+      <div class="intermediaryContainer">
+        <div class="container">
+          <section class="primaryContent">
+            <p>
+              Citizens Organized is dedicated to helping to elect by making
+              materials available.
+              <a href="/about" class="link">Learn more about us</a>.
+            </p>
+          </section>
+          <section class="storefront">
+            <img src="assets/sign.jpg" alt="Sign" class="sign" />
+            <div class="column">
+              <p style="font-size: 24px">
+                It is our belief that the only way to win is by doing our part.
+                Get the word out. Stay front-of-mind. Fight for the people.
+              </p>
+              <br />
+              <div class="buttonContainer">
+                <a
+                  href="https://buy.stripe.com/test_00g8yp08X3Y604o8ww"
+                  class="actionButton purchaseButton"
+                  target="_blank"
+                >
+                  Purchase Signs →
+                </a>
+              </div>
+              <br />
+              <p class="subtext">
+                Signs are available in cases of 200. Our mission is to help you
+                distribute signs to folks in your circles. Paid for & printed by
+                Citizens Organized.
+              </p>
+            </div>
+          </section>
+          <div class="blueBar"></div>
+        </div>
+      </div>
+    </div>
+    <%- include("includes/footer.ejs") %>
+  </body>
+</html>

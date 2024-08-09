@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Citizens Organized</title>
+  </head>
+  <body>
+    <%- include("includes/header.ejs", {
+      small: true,
+      subtitle: "Citizens Organized",
+      title: "About us."
+    }) %>
+
+    <!-- /HEADER -->
+
+    <div class="outerContainer">
+      <div class="intermediaryContainer">
+        <div class="container">
+          <section class="primaryContent">
+            <p>
+              Citizens Organized is dedicated to helping to elect by making
+              materials available.
+              <a href="/about" class="link">Learn more about us</a>.
+            </p>
+          </section>
+          <section class="storefront">
+            <div class="column">
+              <p>
+                At Citizens Organized, our mission is to empower communities across the United States by providing the tools needed to support candidates who embody the values and vision that will secure a brighter future for all. We believe that real change begins at the grassroots level, where citizens unite to champion the leaders who will fight for their interests.
+                <br /><br />
+                We are committed to making it easy for you to express your support and spread your message. By offering high-quality yard signs in bulk, we aim to give you the resources to rally your community and ensure that your voice is heard in every neighborhood, town, and city. Our goal is to help you make a tangible impact in the political landscape, one sign at a time.
+              </p>
+            </div>
+          </section>
+          <div class="blueBar"></div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+  </body>
+</html>

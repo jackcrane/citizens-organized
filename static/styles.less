@@ -1,0 +1,219 @@
+@theme-blue: #00AEF3;
+@theme-black: #272727;
+@theme-gray: #D9D9D9;
+@theme-white: #F1F1F1;
+
+.outerContainer {
+  max-width: 1600px;
+  margin: 0 auto;
+  &.img {
+    background:
+      radial-gradient(circle at 65% 25%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.1) 38%,
+        rgba(0, 0, 0, 0.5) 65%,
+        rgba(0, 0, 0, 0.65) 100%
+      ),
+      url('assets/white-house.jpg') no-repeat center center/cover;
+  }
+}
+
+.intermediaryContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.container {
+  margin: 0 40px;
+}
+
+body {
+  font-family: "Mate", serif;
+  color: @theme-black;
+  background-color: @theme-white;
+  margin: 0;
+  padding: 0;
+}
+
+h1, .title {
+  font-family: "Volkhov", serif;
+}
+
+header {
+  height: 90vh;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &.short {
+    height: 60vh;
+    max-height: 400px;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+  padding: 16px 0;
+  border-bottom: 3px solid @theme-black;
+  .link {
+    font-size: 18px;
+  }
+}
+
+.headerRowTight {
+  display: flex;
+    flex-direction: row;
+  gap: 28px;
+}
+
+.actionButton {
+  background-color: @theme-blue;
+  color: @theme-white;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: lighten(@theme-blue, 10%);
+  }
+  &:active {
+    background-color: lighten(@theme-blue, 15%);
+  }
+}
+
+.headerLink {
+  font-size: 22px;
+}
+
+.link {
+  color: @theme-black;
+  text-decoration: underline;
+  text-decoration-color: @theme-blue;
+  padding: 4px 8px;
+  margin: -4px -8px;
+  transition: background-color 0.2s, color 0.2s, text-decoration-color 0.2s;
+  &:hover {
+    background-color: @theme-blue;
+    color: @theme-white;
+    text-decoration-color: @theme-white;
+  }
+}
+
+.textlink {
+  color: @theme-black;
+  text-decoration: underline;
+  text-decoration-color: @theme-black;
+  transition: color 0.2s, text-decoration-color 0.2s;
+  display: inline;
+  &:hover {
+    text-decoration-color: @theme-blue;
+  }
+}
+
+.headerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.titleblock {
+  color: @theme-white;
+  margin-bottom: 32px;
+  h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+  h1 {
+    font-size: 64px;
+    margin: 0;
+  }
+}
+
+h3 {
+  font-family: "Volkhov", serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blueBar {
+  width: 12px;
+  height: 260px;
+  background-color: @theme-blue;
+  margin-bottom: -200px;
+  margin-right: 16px;
+  margin-top: -24px;
+  position: relative; /* Add positioning context */
+  z-index: 10;
+  &.short {
+    height: 150px;
+  }
+}
+
+.primaryContent {
+  margin-left: 28px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  &.small {
+    font-size: 18px;
+  }
+  &.subtext {
+    font-size: 14px;
+    color: #676767;
+  }
+}
+
+.storefront {
+  margin: 80px 0;
+  display: flex;
+  gap: 32px;
+}
+
+.sign {
+  width: 400px;
+  object-fit: contain;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.purchaseButton {
+  font-size: 24px;
+}
+
+footer {
+  background-color: @theme-gray;
+  min-height: 300px;
+  background-image: url('assets/gcoausa.svg');
+  background-repeat: no-repeat;
+  background-size: 130% 130%;
+  background-position: -50% 50%;
+  padding-bottom: 30px;
+  padding-top: 24px;
+}
+
+.rowsponsive {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h2.toc {
+  margin: 0;
+}

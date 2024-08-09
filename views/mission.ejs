@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Citizens Organized</title>
+  </head>
+  <body>
+    <%- include("includes/header.ejs", {
+      small: true,
+      subtitle: "Citizens Organized",
+      title: "Terms of use."
+    }) %>
+
+    <!-- /HEADER -->
+
+    <div class="outerContainer">
+      <div class="intermediaryContainer">
+        <div class="container">
+          <section class="primaryContent">
+            <p>
+              Citizens Organized is dedicated to helping to elect by making
+              materials available.
+              <a href="/about" class="link">Learn more about us</a>.
+            </p>
+          </section>
+          <section class="storefront">
+            <div class="column">
+              <p>
+                Citizens Organized was founded with a passion for helping to
+                secure the future of the United States. We believe that the best
+                way to do this is to elect candidates who share our values and
+                our vision for the future. We are dedicated to helping to elect
+                candidates who will work to make the United States a better
+                place for all of its citizens.
+                <br /><br />
+                We have a simple model: we provide simple yard signs, sold in
+                cases of 200, that you can distribute to your friends, family,
+                members, followers, etc.
+              </p>
+            </div>
+          </section>
+          <div class="blueBar"></div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+  </body>
+</html>
