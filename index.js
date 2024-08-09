@@ -7,6 +7,7 @@ app.use((req, res, next) => {
   console.log(
     `${req.method} ${req.url} - ${req.ip} - ${new Date().toLocaleString()}`,
   );
+  next();
 });
 
 app.use(express.static("static"));
